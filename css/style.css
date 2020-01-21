@@ -1,5 +1,6 @@
 /*STARTER CODE*/
 
+
 /*
 We have started some of the selectors for you.
 For others we have provided hints on what the selectors should be.
@@ -8,61 +9,88 @@ There are some missing selectors.
 Make sure to learn what the starter code does!!
 */
 
-body{
-  color: black;
-  font-family: sans-serif;
-  font-size: 16px;
-  margin: 1.2em;
-  background-size: cover ;
-  background-position: center;
+body {
+    color: black;
+    font-family: Andika, sans-serif;
+    font-size: 16px;
+    margin: 1.2em;
+    background-size: cover;
+    background-position: center;
+    background: url(../images/pigeon-background.jpeg) #DDDDDD;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-main{
-  margin-bottom: 100px;
+main {
+    margin-bottom: 100px;
 }
 
-h1{
-  color: #8000FF;
-  font-size: 2em;
-  line-height: 1.5;
-  text-align: center;
+h1 {
+    color: #8000FF;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: center;
 }
 
-caption{
-  margin:5px 0px;
+caption {
+    margin: 5px 0px;
 }
 
-p{}
+p {
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
 
-a{}
+a {
+    font-size: 16px;
+    color: #C12258;
+    text-decoration: wavy;
+    text-decoration: blue;
+}
 
-table{
+a:focus {
+    border: black;
+    border-radius: 2px;
+}
+
+table {
     border: 2px solid black;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.colhead{
-  background-color: #7e0820;
-  color: white;
+.colhead {
+    background-color: #7e0820;
+    color: white;
+    min-width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #7e0820;
+    text-transform: uppercase;
 }
 
-.rowhead{}
+.rowhead {}
 
-td{
-  padding: 15px;
+td {
+    padding: 15px;
 }
 
-tr{}
+tr {
+    border-top: 2px solid black;
+}
 
-*{}
+* {}
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child {}
 
-footer{
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  width:100%;
-  background:black;
-  text-align:center;
-  color: white;
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
 }
