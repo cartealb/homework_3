@@ -14,11 +14,12 @@ body {
     font-family: Andika, sans-serif;
     font-size: 16px;
     margin: 1.2em;
+    /* https://stackoverflow.com/questions/19706528/how-to-stretch-a-background-image-to-a-fill-a-div */
+    background: url(../images/pigeon-background.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    background: url(../images/pigeon-background.jpeg) #DDDDDD;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 main {
@@ -58,24 +59,22 @@ table {
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
-    border: 2px solid black;
 }
 
 thead {
     border-radius: 15px 15px 0 0;
+    border-bottom: 2px;
 }
 
-thead tr:first-child th:first-child {
+thead th:first-child {
     border-radius: 15px 0 0 0;
-    border: 2px;
 }
 
-thead tr:first-child th:last-child {
+thead th:last-child {
     border-radius: 0 15px 0 0;
 }
 
-tbody tr:last-child td:first-child {
+tbody tr:last-child th:first-child {
     border-radius: 0 0 0 15px;
 }
 
@@ -92,8 +91,6 @@ tbody tr:last-child td:last-child {
     background-color: #7e0820;
     text-transform: uppercase;
 }
-
-.rowhead {}
 
 td {
     padding: 15px;
@@ -115,22 +112,24 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: transparent;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
 }
 
 tr:hover {
     background-color: rgb(126, 8, 32, .5);
 }
 
-* {}
-
-thead tr:first-child th:first-child {}
-
 footer {
-    position: fixed;
+    position: absolute;
     left: 0px;
     bottom: 0px;
     width: 100%;
-    background: black;
-    text-align: center;
+    background-color: black;
+    min-height: 60px;
+}
+
+footer p {
     color: white;
+    text-align: center;
 }
