@@ -49,7 +49,7 @@ a {
     text-decoration: underline wavy;
 }
 
-a:focus {
+*:focus {
     border-style: solid;
     border-color: black;
     border-radius: 2px;
@@ -59,27 +59,37 @@ table {
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
+    border-collapse: separate;
 }
 
 thead {
     border-radius: 15px 15px 0 0;
     border-bottom: 2px;
+    border-top: solid 2px black;
 }
 
 thead th:first-child {
     border-radius: 15px 0 0 0;
+    border-top: solid 2px black;
+    border-left: solid 2px black;
 }
 
 thead th:last-child {
     border-radius: 0 15px 0 0;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
 }
 
 tbody tr:last-child th:first-child {
     border-radius: 0 0 0 15px;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
 }
 
 tbody tr:last-child td:last-child {
     border-radius: 0 0 15px 0;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
 }
 
 .colhead {
@@ -95,10 +105,26 @@ tbody tr:last-child td:last-child {
 td {
     padding: 15px;
     text-align: center;
+    border-top: solid 2px black;
+}
+
+tr:last-child td {
+    border-bottom: solid 2px black;
+}
+
+tbody tr td:last-child {
+    border-right: solid 2px black;
+}
+
+tbody tr th {
+    border-left: solid 2px black;
 }
 
 tr {
     text-align: center;
+}
+
+th {
     border-top: solid 2px black;
 }
 
@@ -112,8 +138,6 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: transparent;
-    border-left: solid 2px black;
-    border-right: solid 2px black;
 }
 
 tr:hover {
@@ -121,7 +145,7 @@ tr:hover {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
